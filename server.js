@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const Card = require('./models/cards');
-const uriString = "mongodb+srv://AnikaAhsan:AnikaAhsan@cluster0.m9gfy.mongodb.net/tinder-clone?retryWrites=true&w=majority";
+const uriString = require('./config/database').connectionString;
 
 const app = express();
 const port = process.env.PORT || 5000;
